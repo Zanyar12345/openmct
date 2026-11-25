@@ -100,6 +100,7 @@
     "clean": "rm -rf ./dist ./node_modules ./coverage ./html-test-results ./e2e/test-results ./.nyc_output ./e2e/.nyc_output",
     "build": "npm run build:prod && npx tsc",
     "start": "npx webpack serve --config ./.webpack/webpack.dev.mjs",
+    "start:history": "node history-server.js",
     "start:prod": "npx webpack serve --config ./.webpack/webpack.prod.mjs",
     "start:coverage": "npx webpack serve --config ./.webpack/webpack.coverage.mjs",
     "lint:js": "eslint \"example/**/*.js\" \"src/**/*.js\" \"e2e/**/*.js\" \"openmct.js\" --max-warnings=0",
@@ -162,5 +163,10 @@
   "license": "Apache-2.0",
   "keywords": [
     "nasa"
-  ]
+  ],
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "ws": "^8.21.1"
+  }
 }

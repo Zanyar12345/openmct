@@ -110,6 +110,10 @@ const config = {
           }
         },
         {
+          from: './surus-ui.json',
+          to: 'surus-ui.json'
+        },
+        {
           from: 'src/plugins/imagery/layers',
           to: 'imagery'
         }

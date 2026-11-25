@@ -90,7 +90,8 @@ import UTCTimeSystem from './utcTimeSystem/plugin.js';
 import ViewDatumAction from './viewDatumAction/plugin.js';
 import ViewLargeAction from './viewLargeAction/plugin.js';
 import WebPagePlugin from './webPage/plugin.js';
-
+import RosDictionaryPlugin from './ros/RosDictionaryPlugin.js';
+import RosRealtimePlugin from './ros/RosRealtimePlugin.js';
 /**
  * @type {Object}
  */
@@ -184,5 +185,7 @@ plugins.InspectorDataVisualization = InspectorDataVisualization;
 plugins.CorrelationTelemetry = CorrelationTelemetryPlugin;
 plugins.DerivedTelemetry = DerivedTelemetryPlugin;
 plugins.EventTimestripPlugin = EventTimestripPlugin;
+plugins.RosDictionaryPlugin = RosDictionaryPlugin;
+plugins.RosRealtimePlugin = RosRealtimePlugin;
 
 export default plugins;
